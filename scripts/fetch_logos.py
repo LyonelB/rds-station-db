@@ -52,7 +52,16 @@ def process_country(cc, dry_run=False):
     modified = False
     for s in data["stations"]:
         pi, name = s["pi"], s["name"]
-        if s.get("logo_url"): print(f"  [{pi}] {name} — logo déjà présent"); continue
+        if s.get("logo_url") and s.get("logo_source") == "local":
+            existing = list((LOGOS_DIR / cc).glob(f"{pi}.*"))
+            if existing:
+                print(f"  [{pi}] {name} — logo local présent ({existing[0].name})")
+                continue
+            else:
+                print(f"  [{pi}] {name} — logo_url défini mais fichier absent, recherche...")
+        elif s.get("logo_url"):
+            print(f"  [{pi}] {name} — logo déjà présent ({s.get('logo_source')})")
+            continue
         print(f"  [{pi}] {name} — recherche...")
         results  = rb_search(name, cc)
         favicon  = best_favicon(results, name)
