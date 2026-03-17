@@ -1,0 +1,38 @@
+name: "✏️ Modifier une station"
+description: "Signaler une erreur ou proposer une mise à jour"
+title: "[MODIFY] XX - CodePI - Description"
+labels: ["modify-station", "needs-review"]
+body:
+  - type: dropdown
+    id: country
+    attributes:
+      label: "Pays *"
+      options: [FR (France), BE (Belgique), CH (Suisse), LU (Luxembourg), ES (Espagne), IT (Italie), DE (Allemagne), Autre]
+    validations: { required: true }
+  - type: input
+    id: pi_code
+    attributes:
+      label: "Code PI RDS *"
+      placeholder: "FA41"
+    validations: { required: true }
+  - type: dropdown
+    id: field
+    attributes:
+      label: "Champ(s) à modifier *"
+      multiple: true
+      options: [ps, name, frequency, city, logo_url, website, notes]
+    validations: { required: true }
+  - type: textarea
+    id: current_value
+    attributes:
+      label: "Valeur actuelle (ce qui est faux)"
+  - type: textarea
+    id: new_value
+    attributes:
+      label: "Nouvelle valeur proposée *"
+    validations: { required: true }
+  - type: textarea
+    id: reason
+    attributes:
+      label: "Justification / source *"
+    validations: { required: true }

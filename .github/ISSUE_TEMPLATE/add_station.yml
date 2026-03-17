@@ -1,0 +1,74 @@
+name: "➕ Ajouter une station"
+description: "Proposer l'ajout d'une nouvelle station dans la base de données"
+title: "[ADD] XX - NomDeLaStation"
+labels: ["add-station", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: "Merci de contribuer ! Les champs marqués * sont obligatoires."
+  - type: dropdown
+    id: country
+    attributes:
+      label: "Pays *"
+      options: [FR (France), BE (Belgique), CH (Suisse), LU (Luxembourg), ES (Espagne), IT (Italie), DE (Allemagne), Autre]
+    validations: { required: true }
+  - type: input
+    id: pi_code
+    attributes:
+      label: "Code PI RDS *"
+      description: "4 caractères hexadécimaux (ex: FA41)"
+      placeholder: "FA41"
+    validations: { required: true }
+  - type: input
+    id: ps_name
+    attributes:
+      label: "Nom PS RDS *"
+      description: "Nom tel que diffusé dans le flux RDS, max 8 caractères"
+      placeholder: "GRAFFITI"
+    validations: { required: true }
+  - type: input
+    id: full_name
+    attributes:
+      label: "Nom complet *"
+      placeholder: "Graffiti Radio"
+    validations: { required: true }
+  - type: input
+    id: frequency
+    attributes:
+      label: "Fréquence principale (MHz)"
+      placeholder: "88.6"
+  - type: input
+    id: city
+    attributes:
+      label: "Ville / zone"
+      placeholder: "La Roche-sur-Yon"
+  - type: input
+    id: website
+    attributes:
+      label: "Site web"
+      placeholder: "https://graffitiradio.fr"
+  - type: input
+    id: logo_url
+    attributes:
+      label: "URL du logo"
+      placeholder: "https://..."
+  - type: textarea
+    id: notes
+    attributes:
+      label: "Notes"
+      placeholder: "Radio associative créée en 1986 - Vendée (85)"
+  - type: textarea
+    id: source
+    attributes:
+      label: "Source / vérification *"
+      placeholder: "Vérifié par réception directe avec SDR le 2026-03-17"
+    validations: { required: true }
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: "Consentement"
+      options:
+        - label: "Je confirme que ces informations sont correctes à ma connaissance"
+          required: true
+        - label: "Je consens à ce que ces données soient publiées sous licence CC0"
+          required: true

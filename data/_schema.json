@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "RDS Station Database - Country File",
+  "type": "object",
+  "required": ["country", "updated", "stations"],
+  "properties": {
+    "country": {
+      "type": "string",
+      "description": "ISO 3166-1 alpha-2 country code (ex: FR, BE, CH)"
+    },
+    "updated": {
+      "type": "string",
+      "format": "date",
+      "description": "Date of last update (YYYY-MM-DD)"
+    },
+    "stations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["pi", "ps", "name"],
+        "properties": {
+          "pi":           { "type": "string", "pattern": "^[0-9A-Fa-f]{4}$" },
+          "ps":           { "type": "string", "maxLength": 8 },
+          "name":         { "type": "string" },
+          "frequency":    { "type": ["number", "null"] },
+          "city":         { "type": ["string", "null"] },
+          "logo_url":     { "type": ["string", "null"] },
+          "logo_source":  { "type": ["string", "null"], "enum": ["local","radio-browser","official",null] },
+          "website":      { "type": ["string", "null"] },
+          "notes":        { "type": ["string", "null"] },
+          "contributor":  { "type": ["string", "null"] },
+          "updated":      { "type": ["string", "null"] }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}
