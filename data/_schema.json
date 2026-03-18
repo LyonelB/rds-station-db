@@ -2,7 +2,11 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "RDS Station Database - Country File",
   "type": "object",
-  "required": ["country", "updated", "stations"],
+  "required": [
+    "country",
+    "updated",
+    "stations"
+  ],
   "properties": {
     "country": {
       "type": "string",
@@ -17,19 +21,62 @@
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["pi", "ps", "name"],
+        "required": [
+          "pi",
+          "ps",
+          "name"
+        ],
         "properties": {
-          "pi":           { "type": "string", "pattern": "^[0-9A-Fa-f]{4}$" },
-          "ps":           { "type": "string", "maxLength": 8 },
-          "name":         { "type": "string" },
-          "frequency":    { "type": ["number", "null"] },
-          "city":         { "type": ["string", "null"] },
-          "logo_url":     { "type": ["string", "null"] },
-          "logo_source":  { "type": ["string", "null"], "enum": ["local","radio-browser","official",null] },
-          "website":      { "type": ["string", "null"] },
-          "notes":        { "type": ["string", "null"] },
-          "contributor":  { "type": ["string", "null"] },
-          "updated":      { "type": ["string", "null"] }
+          "pi": {
+            "type": "string",
+            "pattern": "^[0-9A-Fa-f]{4}$",
+            "description": "RDS PI code - 4 hex digits (ex: F201)"
+          },
+          "ps": {
+            "type": "string",
+            "maxLength": 8,
+            "description": "RDS PS name - max 8 chars as broadcast"
+          },
+          "name": {
+            "type": "string",
+            "description": "Full station name (ex: France Inter)"
+          },
+          "logo_url": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "uri",
+            "description": "URL to logo (prefer raw GitHub URL to logos/ folder)"
+          },
+          "logo_source": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "enum": [
+              "local",
+              "radio-browser",
+              "official",
+              null
+            ],
+            "description": "Origin of the logo"
+          },
+          "contributor": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "GitHub username of the contributor"
+          },
+          "updated": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date",
+            "description": "Date this entry was last updated"
+          }
         },
         "additionalProperties": false
       }
