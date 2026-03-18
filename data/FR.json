@@ -687,6 +687,15 @@
       "updated": "2026-03-18"
     },
     {
+      "pi": "F20C",
+      "ps": "RCF85",
+      "name": "RCF Vendée",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "LyonelB",
+      "updated": "2026-03-18"
+    },
+    {
       "pi": "F211",
       "ps": "RTL",
       "name": "RTL",
