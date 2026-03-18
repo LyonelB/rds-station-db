@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RDS Station DB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0a0e1a; --surface: #111827; --surface2: #1a2236; --border: #1e2d4a;
+      --accent: #3b82f6; --accent2: #06b6d4; --text: #e2e8f0; --muted: #64748b;
+      --mono: 'Space Mono', monospace; --sans: 'DM Sans', sans-serif;
+    }
+    body { background: var(--bg); color: var(--text); font-family: var(--sans); min-height: 100vh; overflow-x: hidden; }
+    body::before {
+      content: ''; position: fixed; inset: 0;
+      background-image: linear-gradient(rgba(59,130,246,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(59,130,246,0.03) 1px, transparent 1px);
+      background-size: 40px 40px; pointer-events: none; z-index: 0;
+    }
+    .container { max-width: 900px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; }
+    header { padding: 48px 0 32px; border-bottom: 1px solid var(--border); margin-bottom: 40px; }
+    .header-inner { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+    .logo-area h1 {
+      font-family: var(--mono); font-size: 28px; font-weight: 700; letter-spacing: -0.5px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    .logo-area p { font-size: 13px; color: var(--muted); margin-top: 4px; font-family: var(--mono); }
+    .stats-pill {
+      font-family: var(--mono); font-size: 11px; color: var(--accent2);
+      background: rgba(6,182,212,0.08); border: 1px solid rgba(6,182,212,0.2);
+      padding: 6px 14px; border-radius: 20px; white-space: nowrap;
+    }
+    .search-section { margin-bottom: 32px; }
+    .search-label { font-family: var(--mono); font-size: 10px; letter-spacing: 2px; color: var(--muted); text-transform: uppercase; margin-bottom: 12px; }
+    .search-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+    @media (max-width: 600px) { .search-grid { grid-template-columns: 1fr; } }
+    .search-field label { display: block; font-size: 11px; font-family: var(--mono); color: var(--muted); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 1px; }
+    .search-field input {
+      width: 100%; background: var(--surface); border: 1px solid var(--border);
+      color: var(--text); font-family: var(--mono); font-size: 14px;
+      padding: 10px 14px; border-radius: 6px; outline: none; transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .search-field input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(59,130,246,0.1); }
+    .search-field input::placeholder { color: var(--muted); }
+    .clear-btn {
+      margin-top: 12px; background: none; border: 1px solid var(--border);
+      color: var(--muted); font-family: var(--mono); font-size: 11px;
+      padding: 6px 14px; border-radius: 4px; cursor: pointer; transition: all 0.15s; letter-spacing: 1px;
+    }
+    .clear-btn:hover { border-color: var(--muted); color: var(--text); }
+    .results-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+    .results-count { font-family: var(--mono); font-size: 11px; color: var(--muted); letter-spacing: 1px; text-transform: uppercase; }
+    .results-count span { color: var(--accent2); font-weight: 700; }
+    .results-grid { display: grid; gap: 8px; }
+    .station-card {
+      background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+      padding: 14px 18px; cursor: pointer; display: flex; align-items: center; gap: 16px;
+      transition: border-color 0.15s, background 0.15s, transform 0.1s;
+    }
+    .station-card:hover { border-color: var(--accent); background: var(--surface2); transform: translateX(4px); }
+    .station-card.selected { border-color: var(--accent); background: var(--surface2); box-shadow: 0 0 0 1px var(--accent), inset 0 0 20px rgba(59,130,246,0.05); }
+    .card-logo { width: 44px; height: 44px; flex-shrink: 0; border-radius: 8px; overflow: hidden; background: var(--surface2); display: flex; align-items: center; justify-content: center; }
+    .card-logo img { width: 100%; height: 100%; object-fit: contain; padding: 4px; }
+    .card-logo-placeholder { font-family: var(--mono); font-size: 10px; color: var(--muted); text-align: center; }
+    .card-info { flex: 1; min-width: 0; }
+    .card-name { font-size: 15px; font-weight: 500; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .card-meta { display: flex; gap: 8px; margin-top: 4px; align-items: center; flex-wrap: wrap; }
+    .badge { font-family: var(--mono); font-size: 10px; padding: 2px 8px; border-radius: 3px; letter-spacing: 0.5px; }
+    .badge-pi { background: rgba(59,130,246,0.12); color: #60a5fa; border: 1px solid rgba(59,130,246,0.2); }
+    .badge-ps { background: rgba(6,182,212,0.1); color: #22d3ee; border: 1px solid rgba(6,182,212,0.2); }
+    .badge-freq { background: rgba(16,185,129,0.1); color: #34d399; border: 1px solid rgba(16,185,129,0.2); }
+    .card-arrow { color: var(--muted); font-size: 16px; flex-shrink: 0; transition: color 0.15s; }
+    .station-card:hover .card-arrow { color: var(--accent); }
+    .detail-panel {
+      display: none; background: var(--surface); border: 1px solid var(--accent);
+      border-radius: 12px; padding: 28px; margin-bottom: 32px; position: relative;
+      box-shadow: 0 0 40px rgba(59,130,246,0.08); animation: slideIn 0.2s ease;
+    }
+    @keyframes slideIn { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
+    .detail-panel.visible { display: block; }
+    .detail-close {
+      position: absolute; top: 16px; right: 16px; background: none; border: 1px solid var(--border);
+      color: var(--muted); width: 28px; height: 28px; border-radius: 4px; cursor: pointer;
+      font-size: 14px; display: flex; align-items: center; justify-content: center; transition: all 0.15s;
+    }
+    .detail-close:hover { border-color: var(--text); color: var(--text); }
+    .detail-inner { display: flex; gap: 28px; align-items: flex-start; flex-wrap: wrap; }
+    .detail-logo {
+      width: 100px; height: 100px; flex-shrink: 0; border-radius: 12px; overflow: hidden;
+      background: var(--surface2); display: flex; align-items: center; justify-content: center;
+      border: 1px solid var(--border);
+    }
+    .detail-logo img { width: 100%; height: 100%; object-fit: contain; padding: 8px; }
+    .detail-logo-placeholder { font-family: var(--mono); font-size: 11px; color: var(--muted); text-align: center; padding: 12px; }
+    .detail-fields { flex: 1; min-width: 200px; }
+    .detail-name { font-size: 22px; font-weight: 600; margin-bottom: 14px; color: var(--text); }
+    .detail-rows { display: flex; flex-direction: column; gap: 8px; }
+    .detail-row { display: flex; align-items: center; gap: 12px; }
+    .detail-row-label { font-family: var(--mono); font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 1.5px; width: 60px; flex-shrink: 0; }
+    .detail-row-value { font-family: var(--mono); font-size: 13px; color: var(--text); }
+    .detail-row-value a { color: var(--accent); text-decoration: none; }
+    .detail-row-value a:hover { text-decoration: underline; }
+    .detail-notes { margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 13px; color: var(--muted); font-style: italic; }
+    .empty-state { text-align: center; padding: 60px 0; color: var(--muted); }
+    .empty-icon { font-size: 40px; margin-bottom: 12px; opacity: 0.4; }
+    .empty-state p { font-family: var(--mono); font-size: 13px; }
+    .loading { text-align: center; padding: 60px 0; font-family: var(--mono); font-size: 13px; color: var(--muted); }
+    .loading::after {
+      content: ''; display: inline-block; width: 12px; height: 12px;
+      border: 2px solid var(--border); border-top-color: var(--accent);
+      border-radius: 50%; animation: spin 0.8s linear infinite; margin-left: 10px; vertical-align: middle;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    footer { border-top: 1px solid var(--border); margin-top: 60px; padding: 24px 0; text-align: center; font-family: var(--mono); font-size: 11px; color: var(--muted); }
+    footer a { color: var(--accent); text-decoration: none; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="header-inner">
+      <div class="logo-area">
+        <h1>RDS Station DB</h1>
+        <p>Base de données des radios FM françaises</p>
+      </div>
+      <div class="stats-pill" id="stats-pill">Chargement…</div>
+    </div>
+  </header>
+
+  <div class="search-section">
+    <div class="search-label">Recherche</div>
+    <div class="search-grid">
+      <div class="search-field">
+        <label>Code PI</label>
+        <input type="text" id="search-pi" placeholder="FA41" maxlength="4">
+      </div>
+      <div class="search-field">
+        <label>Nom PS (RDS)</label>
+        <input type="text" id="search-ps" placeholder="GRAFFITI">
+      </div>
+      <div class="search-field">
+        <label>Nom de la radio</label>
+        <input type="text" id="search-name" placeholder="Graffiti Radio">
+      </div>
+    </div>
+    <button class="clear-btn" onclick="clearSearch()">EFFACER</button>
+  </div>
+
+  <div class="detail-panel" id="detail-panel">
+    <button class="detail-close" onclick="closeDetail()">✕</button>
+    <div class="detail-inner">
+      <div class="detail-logo" id="detail-logo"></div>
+      <div class="detail-fields">
+        <div class="detail-name" id="detail-name"></div>
+        <div class="detail-rows" id="detail-rows"></div>
+        <div class="detail-notes" id="detail-notes" style="display:none"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="results-header">
+    <div class="results-count" id="results-count"></div>
+  </div>
+  <div class="results-grid" id="results-grid">
+    <div class="loading">Chargement de la base</div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <a href="https://github.com/LyonelB/rds-station-db" target="_blank">LyonelB/rds-station-db</a>
+    &nbsp;·&nbsp; CC0 1.0 &nbsp;·&nbsp; Données communautaires
+  </div>
+</footer>
+
+<script>
+  const DB_URL = 'https://raw.githubusercontent.com/LyonelB/rds-station-db/main/data/FR.json';
+  let stations = [], selectedPI = null;
+
+  async function loadDB() {
+    try {
+      const r = await fetch(DB_URL + '?t=' + Date.now());
+      const data = await r.json();
+      stations = data.stations || [];
+      document.getElementById('stats-pill').textContent =
+        'FR · ' + stations.length + ' stations · ' + stations.filter(s=>s.logo_url).length + ' logos';
+      render();
+    } catch(e) {
+      document.getElementById('results-grid').innerHTML =
+        '<div class="empty-state"><div class="empty-icon">⚠</div><p>Erreur de chargement</p></div>';
+    }
+  }
+
+  function getFiltered() {
+    const pi   = document.getElementById('search-pi').value.trim().toUpperCase();
+    const ps   = document.getElementById('search-ps').value.trim().toUpperCase().replace(/_/g,' ');
+    const name = document.getElementById('search-name').value.trim().toUpperCase();
+    if (!pi && !ps && !name) return stations;
+    return stations.filter(s => {
+      const sPI   = (s.pi  ||'').toUpperCase();
+      const sPS   = (s.ps  ||'').replace(/_/g,' ').trim().toUpperCase();
+      const sName = (s.name||'').toUpperCase();
+      return (!pi || sPI.includes(pi)) && (!ps || sPS.includes(ps)) && (!name || sName.includes(name));
+    });
+  }
+
+  function render() {
+    const filtered = getFiltered();
+    const grid = document.getElementById('results-grid');
+    const count = document.getElementById('results-count');
+    const total = filtered.length;
+    count.innerHTML = total === 0 ? 'Aucun résultat'
+      : '<span>' + total + '</span> station' + (total > 1 ? 's' : '');
+    if (total === 0) {
+      grid.innerHTML = '<div class="empty-state"><div class="empty-icon">📻</div><p>Aucune station ne correspond</p></div>';
+      return;
+    }
+    grid.innerHTML = filtered.map(s => {
+      const logoHTML = s.logo_url
+        ? '<img src="' + s.logo_url + '" alt="" onerror="this.parentElement.innerHTML=\'<div class=card-logo-placeholder>—</div>\'">'
+        : '<div class="card-logo-placeholder">—</div>';
+      const freqBadge = s.frequency ? '<span class="badge badge-freq">' + s.frequency + ' MHz</span>' : '';
+      return '<div class="station-card ' + (selectedPI === s.pi ? 'selected' : '') + '" onclick="selectStation(\'' + s.pi + '\')">'
+        + '<div class="card-logo">' + logoHTML + '</div>'
+        + '<div class="card-info">'
+        + '<div class="card-name">' + s.name + '</div>'
+        + '<div class="card-meta">'
+        + '<span class="badge badge-pi">' + s.pi + '</span>'
+        + '<span class="badge badge-ps">' + (s.ps||'').trim() + '</span>'
+        + freqBadge + '</div></div>'
+        + '<div class="card-arrow">›</div></div>';
+    }).join('');
+  }
+
+  function selectStation(pi) {
+    selectedPI = pi;
+    const s = stations.find(x => x.pi === pi);
+    if (!s) return;
+    const logoEl = document.getElementById('detail-logo');
+    logoEl.innerHTML = s.logo_url
+      ? '<img src="' + s.logo_url + '" alt="' + s.name + '" onerror="this.parentElement.innerHTML=\'<div class=detail-logo-placeholder>Pas de logo</div>\'">'
+      : '<div class="detail-logo-placeholder">Pas de logo</div>';
+    document.getElementById('detail-name').textContent = s.name;
+    const rows = [
+      { label: 'PI',    value: s.pi },
+      { label: 'PS',    value: (s.ps||'').trim() },
+      { label: 'Fréq.', value: s.frequency ? s.frequency + ' MHz' : '—' },
+      { label: 'Ville', value: s.city || '—' },
+      { label: 'Site',  value: s.website ? '<a href="' + s.website + '" target="_blank">' + s.website.replace(/^https?:\/\//,'') + '</a>' : '—' },
+    ];
+    document.getElementById('detail-rows').innerHTML = rows.map(r =>
+      '<div class="detail-row"><span class="detail-row-label">' + r.label + '</span><span class="detail-row-value">' + r.value + '</span></div>'
+    ).join('');
+    const notesEl = document.getElementById('detail-notes');
+    if (s.notes) { notesEl.textContent = s.notes; notesEl.style.display = 'block'; }
+    else { notesEl.style.display = 'none'; }
+    document.getElementById('detail-panel').classList.add('visible');
+    document.getElementById('detail-panel').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    render();
+  }
+
+  function closeDetail() {
+    selectedPI = null;
+    document.getElementById('detail-panel').classList.remove('visible');
+    render();
+  }
+
+  function clearSearch() {
+    ['search-pi','search-ps','search-name'].forEach(id => document.getElementById(id).value = '');
+    render();
+  }
+
+  ['search-pi','search-ps','search-name'].forEach(id =>
+    document.getElementById(id).addEventListener('input', render));
+
+  loadDB();
+</script>
+</body>
+</html>
