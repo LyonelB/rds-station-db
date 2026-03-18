@@ -124,7 +124,7 @@
     <div class="header-inner">
       <div class="logo-area">
         <h1>RDS Station DB</h1>
-        <p>Base de données des radios FM françaises</p>
+        <p>Base de données des radios FM</p>
       </div>
       <div class="stats-pill" id="stats-pill">Chargement…</div>
     </div>
@@ -222,7 +222,7 @@
       const logoHTML = s.logo_url
         ? '<img src="' + s.logo_url + '" alt="" onerror="this.parentElement.innerHTML=\'<div class=card-logo-placeholder>—</div>\'">'
         : '<div class="card-logo-placeholder">—</div>';
-      const freqBadge = s.frequency ? '<span class="badge badge-freq">' + s.frequency + ' MHz</span>' : '';
+      const freqBadge = '';
       return '<div class="station-card ' + (selectedPI === s.pi ? 'selected' : '') + '" onclick="selectStation(\'' + s.pi + '\')">'
         + '<div class="card-logo">' + logoHTML + '</div>'
         + '<div class="card-info">'
@@ -247,9 +247,6 @@
     const rows = [
       { label: 'PI',    value: s.pi },
       { label: 'PS',    value: (s.ps||'').trim() },
-      { label: 'Fréq.', value: s.frequency ? s.frequency + ' MHz' : '—' },
-      { label: 'Ville', value: s.city || '—' },
-      { label: 'Site',  value: s.website ? '<a href="' + s.website + '" target="_blank">' + s.website.replace(/^https?:\/\//,'') + '</a>' : '—' },
     ];
     document.getElementById('detail-rows').innerHTML = rows.map(r =>
       '<div class="detail-row"><span class="detail-row-label">' + r.label + '</span><span class="detail-row-value">' + r.value + '</span></div>'
