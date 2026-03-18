@@ -178,7 +178,7 @@
 
 <script>
   const DB_URL = 'https://raw.githubusercontent.com/LyonelB/rds-station-db/main/data/FR.json';
-  let stations = [], selectedPI = null;
+  let stations = [], selectedKey = null;
 
   async function loadDB() {
     try {
@@ -223,7 +223,8 @@
         ? '<img src="' + s.logo_url + '" alt="" onerror="this.parentElement.innerHTML=\'<div class=card-logo-placeholder>—</div>\'">'
         : '<div class="card-logo-placeholder">—</div>';
       const freqBadge = '';
-      return '<div class="station-card ' + (selectedPI === s.pi ? 'selected' : '') + '" onclick="selectStation(\'' + s.pi + '\')">'
+      const key = s.pi + '|' + (s.ps||'').trim();
+      return '<div class="station-card ' + (selectedKey === key ? 'selected' : '') + '" onclick="selectStation(\'' + key + '\')">'
         + '<div class="card-logo">' + logoHTML + '</div>'
         + '<div class="card-info">'
         + '<div class="card-name">' + s.name + '</div>'
@@ -235,9 +236,10 @@
     }).join('');
   }
 
-  function selectStation(pi) {
-    selectedPI = pi;
-    const s = stations.find(x => x.pi === pi);
+  function selectStation(key) {
+    selectedKey = key;
+    const [pi, ps] = key.split('|');
+    const s = stations.find(x => x.pi === pi && (x.ps||'').trim() === ps);
     if (!s) return;
     const logoEl = document.getElementById('detail-logo');
     logoEl.innerHTML = s.logo_url
@@ -260,7 +262,7 @@
   }
 
   function closeDetail() {
-    selectedPI = null;
+    selectedKey = null;
     document.getElementById('detail-panel').classList.remove('visible');
     render();
   }
