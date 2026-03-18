@@ -40,11 +40,65 @@
     },
     {
       "pi": "F205",
+      "ps": "ICIBERRY",
+      "name": "ici Berry",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F205",
+      "ps": "ICIBOURG",
+      "name": "ici Bourgogne",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F205",
+      "ps": "ICICOTEN",
+      "name": "ici Cotentin",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F205",
+      "ps": "ICIDROME",
+      "name": "ici Drôme Ardèche",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F205",
+      "ps": "ICIGIRON",
+      "name": "ici Gironde",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F205",
       "ps": "ICIMAINE",
       "name": "ici Maine",
       "logo_url": null,
       "logo_source": null,
       "contributor": "LyonelB",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F205",
+      "ps": "ICI_BZH_",
+      "name": "ici Breizh Izel",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
       "updated": "2026-03-18"
     },
     {
@@ -58,8 +112,71 @@
     },
     {
       "pi": "F207",
+      "ps": "ICIARMOR",
+      "name": "ici Armorique",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F207",
+      "ps": "ICIBESAN",
+      "name": "ici Besançon",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F207",
+      "ps": "ICICHAMP",
+      "name": "ici Champagne-Ardenne",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F207",
+      "ps": "ICIGASCO",
+      "name": "ici Gascogne",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F207",
+      "ps": "ICIORLEA",
+      "name": "ici Orléans",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F207",
       "ps": "ICIPOITO",
       "name": "ici Poitou",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F207",
+      "ps": "ICI_AZUR",
+      "name": "ici Azur",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F207",
+      "ps": "ICI_GARD",
+      "name": "ici Gard Lozère",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
@@ -76,8 +193,170 @@
     },
     {
       "pi": "F209",
+      "ps": "ICIAUXER",
+      "name": "ici Auxerre",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F209",
+      "ps": "ICIBEARN",
+      "name": "ici Béarn Bigorre",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F209",
+      "ps": "ICIBELFO",
+      "name": "ici Belfort-Montbéliard",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F209",
+      "ps": "ICICREUS",
+      "name": "ici Creuse",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F209",
+      "ps": "ICIISERE",
+      "name": "ici Isère",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F209",
+      "ps": "ICIPERIG",
+      "name": "ici Périgord",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F209",
+      "ps": "ICIPICAR",
+      "name": "ici Picardie",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F209",
+      "ps": "ICIROUSS",
+      "name": "ici Roussillon",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F209",
       "ps": "ICIVAUCL",
       "name": "ici Vaucluse",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F209",
+      "ps": "ICI_LORR",
+      "name": "ici Lorraine",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F209",
+      "ps": "ICI_NORM",
+      "name": "ici Normandie (Calvados - Orne)",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F209",
+      "ps": "ICI_RCFM",
+      "name": "ici RCFM",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F209",
+      "ps": "ICI_TOUR",
+      "name": "ici Touraine",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F20A",
+      "ps": "ICIAUVER",
+      "name": "ici Pays d'Auvergne",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F20A",
+      "ps": "ICIHERAU",
+      "name": "ici Hérault",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F20A",
+      "ps": "ICILAROC",
+      "name": "ici La Rochelle",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F20A",
+      "ps": "ICIMAYEN",
+      "name": "ici Mayenne",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F20A",
+      "ps": "ICISAVOI",
+      "name": "ici Pays de Savoie",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F20A",
+      "ps": "ICI_NORD",
+      "name": "ici Nord",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
@@ -87,6 +366,15 @@
       "pi": "F20A",
       "ps": "ICI_SLOR",
       "name": "ici Sud Lorraine",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F20A",
+      "ps": "__ICI___",
+      "name": "ici Paris Île-de-France",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
@@ -103,8 +391,296 @@
     },
     {
       "pi": "F20C",
+      "ps": "RCF 01",
+      "name": "RCF Pays de l'Ain",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F20C",
+      "ps": "RCF 07",
+      "name": "RCF Vivarais",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F20C",
+      "ps": "RCF 11",
+      "name": "RCF PAYS D'AUDE",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F20C",
+      "ps": "RCF 13",
+      "name": "DIALOGUE RCF",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F20C",
+      "ps": "RCF 16",
+      "name": "RCF Charente",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F20C",
+      "ps": "RCF 19",
+      "name": "RCF Corrèze",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F20C",
+      "ps": "RCF 20",
+      "name": "RCF CORSICA",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F20C",
+      "ps": "RCF 21",
+      "name": "RCF EN BOURGOGNE",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F20C",
+      "ps": "RCF 22",
+      "name": "RCF CÔTES-D'ARMOR",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F20C",
+      "ps": "RCF 25",
+      "name": "RCF Besançon",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F20C",
+      "ps": "RCF 26",
+      "name": "RCF 26",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F20C",
+      "ps": "RCF 34",
+      "name": "RCF MAGUELONE HERAULT",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F20C",
+      "ps": "RCF 37",
+      "name": "RCF TOURAINE SAINT MARTIN",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F20C",
+      "ps": "RCF 38",
+      "name": "RCF Isère",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F20C",
+      "ps": "RCF 39",
+      "name": "RCF JURA",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F20C",
+      "ps": "RCF 42",
+      "name": "RCF Saint-Etienne",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F20C",
+      "ps": "RCF 45",
+      "name": "RCF LOIRET",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F20C",
+      "ps": "RCF 69",
+      "name": "RCF Lyon",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F20C",
+      "ps": "RCF 72",
+      "name": "RCF SARTHE",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F20C",
+      "ps": "RCF 73",
+      "name": "RCF Savoie",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F20C",
+      "ps": "RCF 74",
+      "name": "RCF Haute-Savoie",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F20C",
+      "ps": "RCF 76",
+      "name": "RCF HAUTE-NORMANDIE",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F20C",
+      "ps": "RCF 79-8",
+      "name": "RCF POITOU",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F20C",
+      "ps": "RCF 81",
+      "name": "RCF PAYS TARNAIS",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F20C",
+      "ps": "RCF 83",
+      "name": "RCF Méditerranée",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F20C",
+      "ps": "RCF 84",
+      "name": "RCF VAUCLUSE",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F20C",
+      "ps": "RCF 87",
+      "name": "RCF Email Limousin",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F20C",
+      "ps": "RCF BERR",
+      "name": "RCF EN BERRY",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F20C",
+      "ps": "RCF Nord",
+      "name": "RCF Nord de France",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F20C",
       "ps": "RCF04-05",
       "name": "RCF Alpes-Provence",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F20C",
+      "ps": "RCF10 52",
+      "name": "RCF Aube / Haute-Marne",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F20C",
+      "ps": "RCF14-50",
+      "name": "RCF CALVADOS MANCHE",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F20C",
+      "ps": "RCF51-08",
+      "name": "RCF Reims-Ardennes",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
@@ -141,6 +717,15 @@
       "pi": "F214",
       "ps": "SKYROCK",
       "name": "Radio Peinard Skyrock",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F214",
+      "ps": "SKYROCK",
+      "name": "Skyrock",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
@@ -221,6 +806,15 @@
     {
       "pi": "F220",
       "ps": "NRJ",
+      "name": "NRJ",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F220",
+      "ps": "NRJ",
       "name": "NRJ Réunion",
       "logo_url": null,
       "logo_source": null,
@@ -231,6 +825,15 @@
       "pi": "F221",
       "ps": "CLASSIQ",
       "name": "Radio Classique",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F222",
+      "ps": "AUTOROUT",
+      "name": "Autoroute Info",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
@@ -249,6 +852,15 @@
       "pi": "F223",
       "ps": "TSF JAZZ",
       "name": "TSF JAZZ",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F224",
+      "ps": "CHERIE",
+      "name": "Chérie FM",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
@@ -276,6 +888,15 @@
       "pi": "F226",
       "ps": "102 FM",
       "name": "Rire et chansons Réunion",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F226",
+      "ps": "RIRE &",
+      "name": "Rire et Chansons",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
@@ -418,8 +1039,62 @@
     },
     {
       "pi": "F405",
+      "ps": "ICIALSAC",
+      "name": "ici Alsace",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F405",
+      "ps": "ICILIMOU",
+      "name": "ici Limousin",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F405",
+      "ps": "ICIOCCIT",
+      "name": "ici Occitanie",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F405",
+      "ps": "ICIPROVE",
+      "name": "ici Provence",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F405",
       "ps": "ICISTETI",
       "name": "ici Saint-Étienne Loire",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F405",
+      "ps": "ICI_L-OC",
+      "name": "ici Loire Océan",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F405",
+      "ps": "ICI_NORM",
+      "name": "ici Normandie (Seine-Maritime - Eure)",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
@@ -1821,6 +2496,15 @@
       "updated": "2026-03-18"
     },
     {
+      "pi": "F692",
+      "ps": "100%____",
+      "name": "1",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
       "pi": "F694",
       "ps": "R D L S",
       "name": "Radio de la Save",
@@ -2055,6 +2739,15 @@
       "updated": "2026-03-18"
     },
     {
+      "pi": "F6B6",
+      "ps": "R-P-H",
+      "name": "Radio Pays d'Hérault",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
       "pi": "F6B7",
       "ps": "PICSTLOU",
       "name": "Radio Flash",
@@ -2244,6 +2937,15 @@
       "updated": "2026-03-18"
     },
     {
+      "pi": "F6D6",
+      "ps": "RAJE",
+      "name": "Raje",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
       "pi": "F6D7",
       "ps": "PYRENEES",
       "name": "Pyrénées FM (catégorie B)",
@@ -2326,6 +3028,15 @@
     },
     {
       "pi": "F732",
+      "ps": "DKL DREY",
+      "name": "DKL Dreyeckland",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F732",
       "ps": "DKL_LIBE",
       "name": "DKL LIBERTE",
       "logo_url": null,
@@ -2355,6 +3066,15 @@
       "pi": "F738",
       "ps": "ARCnCIEL",
       "name": "Radio Arc-en-ciel",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F738",
+      "ps": "R.E.C",
+      "name": "Radio en construction",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
@@ -2391,6 +3111,15 @@
       "pi": "F743",
       "ps": "DIRECT55",
       "name": "Direct FM Meuse",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F743",
+      "ps": "DIRECTFM",
+      "name": "Direct FM",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
@@ -2721,6 +3450,15 @@
       "updated": "2026-03-18"
     },
     {
+      "pi": "F7AD",
+      "ps": "PHARE FM",
+      "name": "Phare FM Haute-Normandie",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
       "pi": "F7AE",
       "ps": "ACTIVITE",
       "name": "Radio Activités",
@@ -2946,9 +3684,36 @@
       "updated": "2026-03-18"
     },
     {
+      "pi": "F832",
+      "ps": "PLUS",
+      "name": "La Radio Plus",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
       "pi": "F833",
       "ps": "LifeStyl",
       "name": "LIFESTYLE 74",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F835",
+      "ps": "_VIRGIN_",
+      "name": "Virgin Radio",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F835",
+      "ps": "_VIRGIN_",
+      "name": "Virgin Radio Grenoble Chambéry",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
@@ -2985,6 +3750,15 @@
       "pi": "F83A",
       "ps": "M T I",
       "name": "MTI",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F83E",
+      "ps": "M_RADIO_",
+      "name": "M Radio Lyon",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
@@ -3165,6 +3939,15 @@
       "pi": "F861",
       "ps": "RADMAGNY",
       "name": "RADIOMAGNY",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F864",
+      "ps": "ESPERANC",
+      "name": "Radio Espérance",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
@@ -3794,7 +4577,70 @@
     {
       "pi": "F8FF",
       "ps": "OXYGENE_",
+      "name": "Oxygène Grenoble",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F8FF",
+      "ps": "OXYGENE_",
+      "name": "Oxygène Maurienne",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F8FF",
+      "ps": "OXYGENE_",
+      "name": "Oxygène Oisans",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F8FF",
+      "ps": "OXYGENE_",
+      "name": "Oxygène Val d'Isère",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F8FF",
+      "ps": "OXYGENE_",
+      "name": "Oxygène Vercors",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F8FF",
+      "ps": "OXYGENE_",
       "name": "Radio Oxygène",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F8FF",
+      "ps": "OXYGENE_",
+      "name": "Radio Oxygène Hautes-Alpes",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F931",
+      "ps": "CONTACT",
+      "name": "Contact",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
@@ -4002,6 +4848,15 @@
       "pi": "F987",
       "ps": "R13/RBM",
       "name": "RBM Radio Billy Montigny",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "F987",
+      "ps": "R13/RBM",
+      "name": "Radio 13",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
@@ -4271,7 +5126,25 @@
     {
       "pi": "FA61",
       "ps": "ALOUETTE",
+      "name": "Alouette",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FA61",
+      "ps": "ALOUETTE",
       "name": "Alouette Châteauroux",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FA61",
+      "ps": "ALOUETTE",
+      "name": "Alouette Loches",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
@@ -4342,6 +5215,15 @@
     },
     {
       "pi": "FA84",
+      "ps": "BONHEUR",
+      "name": "Radio Bonheur",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FA84",
       "ps": "RCC RB",
       "name": "Radio Bonheur Centre Bretagne",
       "logo_url": null,
@@ -4378,8 +5260,26 @@
     },
     {
       "pi": "FA88",
+      "ps": "OCEANE",
+      "name": "Océane FM",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FA88",
       "ps": "OCÉANE",
       "name": "OCÉANE BRETAGNE NORD",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FA88",
+      "ps": "OCÉANE :",
+      "name": "OCÉANE BREIZH",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
@@ -4694,6 +5594,24 @@
     {
       "pi": "FB38",
       "ps": "TENDANCE",
+      "name": "TENDANCE OUEST",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FB38",
+      "ps": "TENDANCE",
+      "name": "TENDANCE OUEST ORNE",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FB38",
+      "ps": "TENDANCE",
       "name": "TENDANCE OUEST SEINE MARITIME",
       "logo_url": null,
       "logo_source": null,
@@ -4926,6 +5844,33 @@
       "updated": "2026-03-18"
     },
     {
+      "pi": "FB89",
+      "ps": "SWEET FM",
+      "name": "SWEET FM EN NORMANDIE",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FB89",
+      "ps": "SWEET FM",
+      "name": "SWEET FM NORMANDIE",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FB89",
+      "ps": "SWEET FM",
+      "name": "Sweet FM",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
       "pi": "FB90",
       "ps": "RGC",
       "name": "RADIO GRAND CIEL",
@@ -5017,6 +5962,15 @@
     },
     {
       "pi": "FC34",
+      "ps": "F PLUS",
+      "name": "Fréquence Plus",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FC34",
       "ps": "FPLUS 71",
       "name": "Fréquence Plus Saône et Loire",
       "logo_url": null,
@@ -5073,6 +6027,15 @@
       "pi": "FC3A",
       "ps": "_CAMPUS_",
       "name": "Campus Belfort-Montbéliard",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FC3A",
+      "ps": "_CAMPUS_",
+      "name": "Radio Campus Besançon",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
@@ -5972,6 +6935,15 @@
     {
       "pi": "FDB8",
       "ps": "FOREVER",
+      "name": "Forever Aquitaine",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FDB8",
+      "ps": "FOREVER",
       "name": "Forever Bassin Arcachon",
       "logo_url": null,
       "logo_source": null,
@@ -6105,9 +7077,27 @@
       "updated": "2026-03-18"
     },
     {
+      "pi": "FE10",
+      "ps": "RFI",
+      "name": "RFI",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
       "pi": "FE11",
       "ps": "NRJ",
       "name": "NRJ Nouvelle-Calédonie",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE11",
+      "ps": "RSB FM",
+      "name": "Radio Saint-Barth FM",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
@@ -6124,6 +7114,42 @@
     },
     {
       "pi": "FE31",
+      "ps": "FREEDOM",
+      "name": "Radio Free Dom",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE31",
+      "ps": "ICI & MT",
+      "name": "Ici et Maintenant",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE31",
+      "ps": "MOSAIQUE",
+      "name": "Radio Mosaïque",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE31",
+      "ps": "NEO",
+      "name": "Radio Néo",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE31",
       "ps": "NRJ",
       "name": "NRJ Polynésie",
       "logo_url": null,
@@ -6133,8 +7159,80 @@
     },
     {
       "pi": "FE32",
+      "ps": "F.PROTES",
+      "name": "Fréquence Protestante",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE32",
+      "ps": "KALIME",
+      "name": "Radio Kalimé",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE32",
+      "ps": "N. DAME",
+      "name": "Radio Notre Dame",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE32",
       "ps": "TIARE FM",
       "name": "Radio Tiare",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE32",
+      "ps": "VINYLE",
+      "name": "Vinyle Radio",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE33",
+      "ps": "ELLES FM",
+      "name": "ELLES FM",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE33",
+      "ps": "R R B",
+      "name": "Radio Rythme Bleu",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE33",
+      "ps": "RADIO 1",
+      "name": "Radio 1",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE33",
+      "ps": "RVLD",
+      "name": "Radio Voix dans le Désert",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
@@ -6151,8 +7249,71 @@
     },
     {
       "pi": "FE34",
+      "ps": "ARC CIEL",
+      "name": "Radio Arc-en-Ciel",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE34",
       "ps": "BLEUE",
       "name": "Radio Bleue",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE34",
+      "ps": "DJIIDO",
+      "name": "Radio Djiido",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE34",
+      "ps": "TROPIQUE",
+      "name": "Tropiques FM",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE35",
+      "ps": "EVASION",
+      "name": "EVASION SOMME",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE35",
+      "ps": "EVASION",
+      "name": "Radio Evasion",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE35",
+      "ps": "EVASION_",
+      "name": "EVASION OISE",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE35",
+      "ps": "KFM 91.6",
+      "name": "Radio Kikiwi",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
@@ -6162,6 +7323,24 @@
       "pi": "FE35",
       "ps": "MAOHI FM",
       "name": "MAOHI",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE36",
+      "ps": "N R J",
+      "name": "NRJ Guyane",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE36",
+      "ps": "PLUS FM",
+      "name": "Radio Plus FM",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
@@ -6186,6 +7365,24 @@
       "updated": "2026-03-18"
     },
     {
+      "pi": "FE37",
+      "ps": "T.F.I.",
+      "name": "Toucan Fréquence International - TFI",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE38",
+      "ps": "METIS FM",
+      "name": "Métis FM",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
       "pi": "FE38",
       "ps": "STAR FM",
       "name": "Radio Star",
@@ -6196,8 +7393,26 @@
     },
     {
       "pi": "FE39",
+      "ps": "METROPIQ",
+      "name": "Radio Média Tropique",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE39",
       "ps": "RTV",
       "name": "Radio Te Vevo",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE39",
+      "ps": "STAR",
+      "name": "Radio Star",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
@@ -6231,6 +7446,33 @@
       "updated": "2026-03-18"
     },
     {
+      "pi": "FE40",
+      "ps": "OUEST FM",
+      "name": "Ouest FM (Guyane)",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE40",
+      "ps": "R.I.L.",
+      "name": "Radio des Iles",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE41",
+      "ps": "ESPACE",
+      "name": "Espace FM",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
       "pi": "FE41",
       "ps": "SUD PLUS",
       "name": "Radio Sud Plus",
@@ -6243,6 +7485,15 @@
       "pi": "FE42",
       "ps": "CONTACT",
       "name": "Fugue FM programme Contact FM",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE43",
+      "ps": "CHANTE F",
+      "name": "Chante France",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
@@ -6276,6 +7527,33 @@
       "updated": "2026-03-18"
     },
     {
+      "pi": "FE45",
+      "ps": "VOLTAGE",
+      "name": "Voltage FM",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE46",
+      "ps": "ALIGRE",
+      "name": "Aligre FM",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE46",
+      "ps": "PAYS",
+      "name": "Radio Pays",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
       "pi": "FE46",
       "ps": "RFM",
       "name": "RFM",
@@ -6303,9 +7581,27 @@
       "updated": "2026-03-18"
     },
     {
+      "pi": "FE48",
+      "ps": "R V E",
+      "name": "Radio Vieille Eglise",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
       "pi": "FE49",
       "ps": "104 F M",
       "name": "Radio Plainoise FM",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE50",
+      "ps": "GENE88.2",
+      "name": "Générations",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
@@ -6322,8 +7618,44 @@
     },
     {
       "pi": "FE51",
+      "ps": "100% Jaz",
+      "name": "Radio 100% Jazz",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE51",
       "ps": "MARQUISE",
       "name": "Radio Marquises",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE51",
+      "ps": "SUN FM",
+      "name": "Radio Sun FM Music",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE52",
+      "ps": "Caribou",
+      "name": "Caribou FM",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE52",
+      "ps": "ENGHIEN",
+      "name": "IDFM, Radio Enghien fréquence Ile-de-France",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
@@ -6333,6 +7665,33 @@
       "pi": "FE52",
       "ps": "HITI FM",
       "name": "Radio Hiti FM",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE52",
+      "ps": "R.C.O.",
+      "name": "Radio Cosmique One",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE53",
+      "ps": "MUSICBOX",
+      "name": "MBS Music Box Stéréo",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE53",
+      "ps": "R.M.P.",
+      "name": "Radio Mission Pionnière",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
@@ -6366,6 +7725,24 @@
       "updated": "2026-03-18"
     },
     {
+      "pi": "FE56",
+      "ps": "HORIZON",
+      "name": "Horizon FM",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE56",
+      "ps": "SGABRIEL",
+      "name": "Radio Saint Gabriel",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
       "pi": "FE57",
       "ps": "CAPITAL",
       "name": "Capital FM",
@@ -6375,9 +7752,72 @@
       "updated": "2026-03-18"
     },
     {
+      "pi": "FE57",
+      "ps": "OXYGENE",
+      "name": "Oxygène",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE57",
+      "ps": "R.B.N.G",
+      "name": "Radio Bonne Nouvelle de Guyane",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE58",
+      "ps": "CHIC FM",
+      "name": "CHIC FM",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
       "pi": "FE58",
       "ps": "MEGA FM",
       "name": "MEGA FM",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE58",
+      "ps": "RVM 93.7",
+      "name": "Radio Valois Multien RVM",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE59",
+      "ps": "AYP FM",
+      "name": "Radio AYP",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE59",
+      "ps": "ENTRE2",
+      "name": "Entre-deux FM",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE59",
+      "ps": "FMAGHREB",
+      "name": "France Maghreb",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
@@ -6394,8 +7834,35 @@
     },
     {
       "pi": "FE5A",
+      "ps": "EVRYONE",
+      "name": "EvryOne",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE5A",
+      "ps": "FREEDOM2",
+      "name": "Free Dom 2",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE5A",
       "ps": "R.MASSAB",
       "name": "Radio Massabielle",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE5B",
+      "ps": "FUN",
+      "name": "Fun Radio",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
@@ -6412,8 +7879,35 @@
     },
     {
       "pi": "FE5C",
+      "ps": "Graph'hi",
+      "name": "Graph'hit",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE5C",
+      "ps": "LFM",
+      "name": "LFM Réunion",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE5C",
       "ps": "MIG FM",
       "name": "Radio Musiques Informations Guyanaises (MIG)",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE5D",
+      "ps": "RENIONE",
+      "name": "Lo Rénioné",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
@@ -6430,8 +7924,35 @@
     },
     {
       "pi": "FE5E",
+      "ps": "RL.89.4",
+      "name": "Radio Libertaire",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE5E",
       "ps": "URBANHIT",
       "name": "URBANHIT",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE5F",
+      "ps": "RSSIGNOL",
+      "name": "Radio Rossignol",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE5F",
+      "ps": "RTL 2",
+      "name": "RTL 2",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
@@ -6456,6 +7977,33 @@
       "updated": "2026-03-18"
     },
     {
+      "pi": "FE60",
+      "ps": "CLASSICA",
+      "name": "CLASSICA",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE60",
+      "ps": "Zinfos",
+      "name": "Zinfosradio",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE61",
+      "ps": "KONTAK",
+      "name": "Radio Kontak",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
       "pi": "FE61",
       "ps": "MAYOURI",
       "name": "Mayouri FM",
@@ -6474,9 +8022,36 @@
       "updated": "2026-03-18"
     },
     {
+      "pi": "FE62",
+      "ps": "RTB FM",
+      "name": "Radio Terre Blanche FM",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
       "pi": "FE63",
       "ps": "GAIAC FM",
       "name": "Radio GAIAC",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE63",
+      "ps": "KWEZI FM",
+      "name": "Kwezi FM",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE64",
+      "ps": "KON YERE",
+      "name": "Radio Kon Yere",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
@@ -6501,6 +8076,15 @@
       "updated": "2026-03-18"
     },
     {
+      "pi": "FE65",
+      "ps": "RVFM",
+      "name": "Radio Voix du Fleuve Maroni",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
       "pi": "FE66",
       "ps": "CHICONI",
       "name": "Chiconi FM",
@@ -6510,9 +8094,72 @@
       "updated": "2026-03-18"
     },
     {
+      "pi": "FE66",
+      "ps": "R-T-I",
+      "name": "Radio Tour de l'Isle",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE67",
+      "ps": "NOSTALGI",
+      "name": "Nostalgie Guadeloupe",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE67",
+      "ps": "NOSTALGI",
+      "name": "Nostalgie Guyane",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE67",
+      "ps": "NOSTALGI",
+      "name": "Nostalgie Martinique",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
       "pi": "FE67",
       "ps": "RP",
       "name": "Radio PAROLE",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE68",
+      "ps": "CHERIEFM",
+      "name": "CHERIE FM GUADELOUPE",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE68",
+      "ps": "CHERIEFM",
+      "name": "CHERIE FM GUYANE",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE68",
+      "ps": "CHERIEFM",
+      "name": "CHERIE FM MARTINIQUE",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
@@ -6564,6 +8211,24 @@
       "updated": "2026-03-18"
     },
     {
+      "pi": "FE6C",
+      "ps": "TROPICFM",
+      "name": "TROPIC FM",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE6D",
+      "ps": "CHANTEFM",
+      "name": "Chante FM",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
       "pi": "FE6D",
       "ps": "KSILINDO",
       "name": "Radio Casilindo",
@@ -6582,9 +8247,27 @@
       "updated": "2026-03-18"
     },
     {
+      "pi": "FE6E",
+      "ps": "R.K.S",
+      "name": "Radio Kourou Savanes",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
       "pi": "FE6F",
       "ps": "Fly FM",
       "name": "Fly FM",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE6F",
+      "ps": "R-NTSIKA",
+      "name": "Radio Ntsika",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
@@ -6600,9 +8283,27 @@
       "updated": "2026-03-18"
     },
     {
+      "pi": "FE70",
+      "ps": "Vanakkam",
+      "name": "Vanakkam",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
       "pi": "FE71",
       "ps": "CEMAVYBZ",
       "name": "Cemavybz FM",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE71",
+      "ps": "MELODIA",
+      "name": "Radio Melodia",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
@@ -6744,9 +8445,72 @@
       "updated": "2026-03-18"
     },
     {
+      "pi": "FE80",
+      "ps": "RCI",
+      "name": "RCI Guadeloupe",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE80",
+      "ps": "RZFM",
+      "name": "Radio Zirondel FM",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE81",
+      "ps": "FRE-SUD",
+      "name": "Radio Fréquence Sud",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE81",
+      "ps": "NRJ",
+      "name": "NRJ Guadeloupe",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
       "pi": "FE81",
       "ps": "NRJ",
       "name": "NRJ Martinique",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE81",
+      "ps": "RVVS",
+      "name": "Radio Vexin Val-de-Seine",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE82",
+      "ps": "KREOL FM",
+      "name": "Radio Kréol FM",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE82",
+      "ps": "LOVELY",
+      "name": "RADIO LOVELY",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
@@ -6765,6 +8529,42 @@
       "pi": "FE83",
       "ps": "TRACE FM",
       "name": "Trace FM",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE83",
+      "ps": "VALLEE",
+      "name": "Vallée FM Radio Marne-la-Vallée",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE83",
+      "ps": "VELLY",
+      "name": "Radio Velly Music",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE84",
+      "ps": "HANDI FM",
+      "name": "Handi FM",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE84",
+      "ps": "HIT.FM.",
+      "name": "HIT FM",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
@@ -6798,9 +8598,36 @@
       "updated": "2026-03-18"
     },
     {
+      "pi": "FE86",
+      "ps": "TOP FM",
+      "name": "Radio Top FM",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE87",
+      "ps": "DIGITAL",
+      "name": "Digital FM",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
       "pi": "FE87",
       "ps": "MAXXI",
       "name": "Maxi FM",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE87",
+      "ps": "MERCURE",
+      "name": "Radio Mercure",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
@@ -6825,9 +8652,54 @@
       "updated": "2026-03-18"
     },
     {
+      "pi": "FE89",
+      "ps": "SOLEIL",
+      "name": "Radio Soleil",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE89",
+      "ps": "URBANHIT",
+      "name": "URBAN HIT",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
       "pi": "FE90",
       "ps": "R B R",
       "name": "Radio Banlieue Relax (RBR)",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE90",
+      "ps": "R M 9",
+      "name": "Radio Mixte 9",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE90",
+      "ps": "R PLUS",
+      "name": "Radio Plus",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE91",
+      "ps": "MARMITE",
+      "name": "Marmite FM",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
@@ -6843,9 +8715,45 @@
       "updated": "2026-03-18"
     },
     {
+      "pi": "FE91",
+      "ps": "YVELINES",
+      "name": "Yvelines Radio",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
       "pi": "FE92",
       "ps": "APAL",
       "name": "Radio Ase Plere A Nou Lite",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE92",
+      "ps": "FR.OASIS",
+      "name": "Fréquence Oasis",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE92",
+      "ps": "RGB 99.2",
+      "name": "Radio Ginglet la Boucle",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE93",
+      "ps": "AFRICA 1",
+      "name": "Africa n° 1",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
@@ -6861,6 +8769,15 @@
       "updated": "2026-03-18"
     },
     {
+      "pi": "FE93",
+      "ps": "TROPICAL",
+      "name": "Radio Inter Tropicale",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
       "pi": "FE94",
       "ps": "ECLAIR F",
       "name": "Radio Eclair",
@@ -6870,9 +8787,54 @@
       "updated": "2026-03-18"
     },
     {
+      "pi": "FE94",
+      "ps": "RCI-TROP",
+      "name": "RCI Tropicale",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE95",
+      "ps": "77FM",
+      "name": "77 FM",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
       "pi": "FE95",
       "ps": "ACTIF",
       "name": "Radio Actif Martinique",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE95",
+      "ps": "SUNLAZES",
+      "name": "Radio Sun'Lazes",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE96",
+      "ps": "MIL'PAT'",
+      "name": "Radio Mille Pattes",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE96",
+      "ps": "PIKAN",
+      "name": "Radio Pikan",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
@@ -6897,6 +8859,33 @@
       "updated": "2026-03-18"
     },
     {
+      "pi": "FE97",
+      "ps": "DZIANI",
+      "name": "Radio Dziani",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE97",
+      "ps": "MANGEMBO",
+      "name": "Mangembo FM",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE98",
+      "ps": "CAPUCINS",
+      "name": "Radio Capucins",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
       "pi": "FE98",
       "ps": "YAO FM",
       "name": "Yao FM",
@@ -6907,8 +8896,35 @@
     },
     {
       "pi": "FE99",
+      "ps": "B-P-M",
+      "name": "BPM",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE99",
+      "ps": "MIM.E1",
+      "name": "Radio Musique Infos Mayotte (MIM)",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FE99",
       "ps": "ZOUK FM",
       "name": "ZOUK FM Martinique",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FEA0",
+      "ps": "DECIBEL",
+      "name": "Radio Décibel",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
@@ -6933,6 +8949,24 @@
       "updated": "2026-03-18"
     },
     {
+      "pi": "FEA1",
+      "ps": "SERIE 1",
+      "name": "Radio Série One",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FEA2",
+      "ps": "NEO-FM",
+      "name": "Radio Néo",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
       "pi": "FEA2",
       "ps": "SAPHIR",
       "name": "Radio Saphir FM",
@@ -6951,9 +8985,54 @@
       "updated": "2026-03-18"
     },
     {
+      "pi": "FEA3",
+      "ps": "SUN FM",
+      "name": "Radio Sun Light FM",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FEA3",
+      "ps": "VIVRE FM",
+      "name": "Vivre FM",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FEA4",
+      "ps": "CAMPUS",
+      "name": "Radio Campus Paris",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FEA4",
+      "ps": "MAYOT-FM",
+      "name": "Radio Mayotte",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
       "pi": "FEA4",
       "ps": "R E M",
       "name": "Radio Evangélique de la Martinique",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FEA5",
+      "ps": "RVN-FM",
+      "name": "Radio La Voix du Nord",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
@@ -6978,6 +9057,15 @@
       "updated": "2026-03-18"
     },
     {
+      "pi": "FEA6",
+      "ps": "CARFOUR",
+      "name": "Radio Carrefour",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
       "pi": "FEA7",
       "ps": "FMESPOIR",
       "name": "Radio Espoir",
@@ -6987,9 +9075,45 @@
       "updated": "2026-03-18"
     },
     {
+      "pi": "FEA7",
+      "ps": "LGB 91.9",
+      "name": "Radio L.G.B.",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FEA8",
+      "ps": "CHERIEFM",
+      "name": "Chérie FM",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
       "pi": "FEA8",
       "ps": "RVM-93,3",
       "name": "Radio Vie Meilleure (RVM)",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FEA8",
+      "ps": "ZANTAK",
+      "name": "Radio Zantak",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FEA9",
+      "ps": "KAYANMFM",
+      "name": "Kayanm FM",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
@@ -7008,6 +9132,15 @@
       "pi": "FEB0",
       "ps": "R.L.D.M",
       "name": "Radio Leve Doubout Matinik (RLDM)",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FEB0",
+      "ps": "RIS",
+      "name": "Radio Inter S'cool",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
@@ -7215,6 +9348,15 @@
       "pi": "FECE",
       "ps": "LOISIR F",
       "name": "Radio Loisirs Guyane",
+      "logo_url": null,
+      "logo_source": null,
+      "contributor": "ARCOM",
+      "updated": "2026-03-18"
+    },
+    {
+      "pi": "FECF",
+      "ps": "BELRADIO",
+      "name": "Bel'Radio Guadeloupe",
       "logo_url": null,
       "logo_source": null,
       "contributor": "ARCOM",
