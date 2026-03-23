@@ -128,7 +128,7 @@ jobs:
 
           fixed = 0
           for s in data["stations"]:
-              if s.get("logo_url", "").startswith(OLD):
+              if s.get("logo_url") and s["logo_url"].startswith(OLD):
                   s["logo_url"] = s["logo_url"].replace(OLD, NEW)
                   fixed += 1
 
