@@ -27,7 +27,7 @@ jobs:
           BASE_URL  = "https://tef.noobish.eu/logos/F"
           LOGOS_DIR = Path("logos/FR")
           DATA_FILE = Path("data/FR.json")
-          GH_RAW    = "https://raw.githubusercontent.com/${{ github.repository }}/main/logos/FR"
+          GH_RAW    = "https://cdn.jsdelivr.net/gh/LyonelB/rds-station-db@main/logos/FR"
           UA        = {"User-Agent": "rds-station-db/1.0 (https://github.com/${{ github.repository }})"}
 
           LOGOS_DIR.mkdir(parents=True, exist_ok=True)
@@ -112,6 +112,32 @@ jobs:
               print("FR.json inchangé")
           PYEOF
 
+
+      - name: Fix logo URLs (raw.githubusercontent → jsDelivr)
+        run: |
+          python3 - << 'PYEOF'
+          import json, re
+          from pathlib import Path
+
+          DATA_FILE = Path("data/FR.json")
+          OLD = "https://raw.githubusercontent.com/LyonelB/rds-station-db/main/logos/FR"
+          NEW = "https://cdn.jsdelivr.net/gh/LyonelB/rds-station-db@main/logos/FR"
+
+          with open(DATA_FILE) as f:
+              data = json.load(f)
+
+          fixed = 0
+          for s in data["stations"]:
+              if s.get("logo_url", "").startswith(OLD):
+                  s["logo_url"] = s["logo_url"].replace(OLD, NEW)
+                  fixed += 1
+
+          print(f"URLs corrigées : {fixed}")
+          data["updated"] = "2026-03-23"
+          with open(DATA_FILE, "w") as f:
+              json.dump(data, f, indent=2, ensure_ascii=False)
+              f.write("\n")
+          PYEOF
       - name: Validate
         run: python3 scripts/validate.py
 
