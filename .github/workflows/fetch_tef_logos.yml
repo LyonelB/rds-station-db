@@ -1,7 +1,7 @@
 name: Fetch logos from tef.noobish.eu
 
 on:
-  workflow_dispatch:  # Déclenchement manuel depuis GitHub Actions
+  workflow_dispatch:
 
 jobs:
   fetch-logos:
@@ -15,6 +15,23 @@ jobs:
 
       - name: Install Python deps
         run: pip install requests
+
+      - name: Debug index
+        run: |
+          python3 - << 'PYEOF'
+          import requests
+          UA = {"User-Agent": "rds-station-db/1.0"}
+          r = requests.get("https://tef.noobish.eu/logos/F/", headers=UA, timeout=15)
+          print(f"Status : {r.status_code}")
+          print(f"Content-Type : {r.headers.get('content-type')}")
+          print("--- HTML (500 premiers caractères) ---")
+          print(r.text[:500])
+          print("--- Tous les href trouvés ---")
+          import re
+          hrefs = re.findall(r'href="([^"]+)"', r.text)
+          for h in hrefs[:30]:
+              print(" ", h)
+          PYEOF
 
       - name: Fetch logos
         run: |
@@ -42,7 +59,13 @@ jobs:
           r = requests.get(f"{BASE_URL}/", headers=UA, timeout=15)
           r.raise_for_status()
 
-          filenames = re.findall(r'href="([A-Fa-f0-9]{4}\.(png|svg))"', r.text, re.IGNORECASE)
+          # Essayer plusieurs patterns pour trouver les fichiers
+          filenames = (
+              re.findall(r'href="([A-Fa-f0-9]{4}\.(png|svg))"', r.text, re.IGNORECASE) or
+              re.findall(r'>([A-Fa-f0-9]{4}\.(png|svg))<', r.text, re.IGNORECASE) or
+              re.findall(r'([A-Fa-f0-9]{4}\.(png|svg))', r.text, re.IGNORECASE)
+          )
+
           pi_files = defaultdict(dict)
           for fname, ext in filenames:
               pi_files[fname[:4].upper()][ext.lower()] = fname
