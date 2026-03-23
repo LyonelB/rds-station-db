@@ -16,29 +16,13 @@ jobs:
       - name: Install Python deps
         run: pip install requests
 
-      - name: Debug index
-        run: |
-          python3 - << 'PYEOF'
-          import requests
-          UA = {"User-Agent": "rds-station-db/1.0"}
-          r = requests.get("https://tef.noobish.eu/logos/F/", headers=UA, timeout=15)
-          print(f"Status : {r.status_code}")
-          print(f"Content-Type : {r.headers.get('content-type')}")
-          print("--- HTML (500 premiers caractères) ---")
-          print(r.text[:500])
-          print("--- Tous les href trouvés ---")
-          import re
-          hrefs = re.findall(r'href="([^"]+)"', r.text)
-          for h in hrefs[:30]:
-              print(" ", h)
-          PYEOF
-
       - name: Fetch logos
         run: |
           python3 - << 'PYEOF'
           import json, re, requests, shutil
           from pathlib import Path
           from collections import defaultdict
+          from urllib.parse import unquote
 
           BASE_URL  = "https://tef.noobish.eu/logos/F"
           LOGOS_DIR = Path("logos/FR")
@@ -59,16 +43,17 @@ jobs:
           r = requests.get(f"{BASE_URL}/", headers=UA, timeout=15)
           r.raise_for_status()
 
-          # Essayer plusieurs patterns pour trouver les fichiers
-          filenames = (
-              re.findall(r'href="([A-Fa-f0-9]{4}\.(png|svg))"', r.text, re.IGNORECASE) or
-              re.findall(r'>([A-Fa-f0-9]{4}\.(png|svg))<', r.text, re.IGNORECASE) or
-              re.findall(r'([A-Fa-f0-9]{4}\.(png|svg))', r.text, re.IGNORECASE)
-          )
+          # Les fichiers sont listés sous la forme href="./F201.png"
+          raw = re.findall(r'href="\./([^"]+\.(png|svg))"', r.text, re.IGNORECASE)
+          filenames = [(unquote(fname), ext) for fname, ext in raw]
 
           pi_files = defaultdict(dict)
           for fname, ext in filenames:
-              pi_files[fname[:4].upper()][ext.lower()] = fname
+              pi = fname[:4].upper()
+              # Ignorer les noms avec espace (ex: F000 .png = doublons mal nommés)
+              if ' ' in fname:
+                  continue
+              pi_files[pi][ext.lower()] = fname
 
           print(f"→ {len(pi_files)} PI trouvés ({sum(len(v) for v in pi_files.values())} fichiers)")
 
@@ -107,6 +92,7 @@ jobs:
                       print(f"  ✅ {dest_name}  ← {src_filename}")
                       downloaded += 1
 
+                      # SVG prioritaire sur PNG pour logo_url
                       if ext == "svg" or not s.get("logo_url"):
                           s["logo_url"]    = gh_url
                           s["logo_source"] = "tef.noobish.eu"
@@ -122,6 +108,8 @@ jobs:
                   json.dump(data, f, indent=2, ensure_ascii=False)
                   f.write("\n")
               print("FR.json mis à jour")
+          else:
+              print("FR.json inchangé")
           PYEOF
 
       - name: Validate
