@@ -1,0 +1,114 @@
+name: Fetch logos from tef.noobish.eu
+
+on:
+  workflow_dispatch:  # Déclenchement manuel depuis GitHub Actions
+
+jobs:
+  fetch-logos:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Python deps
+        run: pip install requests
+
+      - name: Fetch logos
+        run: |
+          python3 - << 'PYEOF'
+          import json, re, requests, shutil
+          from pathlib import Path
+          from collections import defaultdict
+
+          BASE_URL  = "https://tef.noobish.eu/logos/F"
+          LOGOS_DIR = Path("logos/FR")
+          DATA_FILE = Path("data/FR.json")
+          GH_RAW    = "https://raw.githubusercontent.com/${{ github.repository }}/main/logos/FR"
+          UA        = {"User-Agent": "rds-station-db/1.0 (https://github.com/${{ github.repository }})"}
+
+          LOGOS_DIR.mkdir(parents=True, exist_ok=True)
+
+          with open(DATA_FILE) as f:
+              data = json.load(f)
+
+          pi_to_stations = defaultdict(list)
+          for s in data["stations"]:
+              pi_to_stations[s["pi"].upper()].append(s)
+
+          print("→ Récupération de l'index...")
+          r = requests.get(f"{BASE_URL}/", headers=UA, timeout=15)
+          r.raise_for_status()
+
+          filenames = re.findall(r'href="([A-Fa-f0-9]{4}\.(png|svg))"', r.text, re.IGNORECASE)
+          pi_files = defaultdict(dict)
+          for fname, ext in filenames:
+              pi_files[fname[:4].upper()][ext.lower()] = fname
+
+          print(f"→ {len(pi_files)} PI trouvés ({sum(len(v) for v in pi_files.values())} fichiers)")
+
+          downloaded = skipped = not_in_db = 0
+          modified = False
+
+          for pi, formats in sorted(pi_files.items()):
+              stations = pi_to_stations.get(pi)
+              if not stations:
+                  print(f"  ○ {pi} — non trouvé dans FR.json, ignoré")
+                  not_in_db += 1
+                  continue
+
+              for ext, src_filename in formats.items():
+                  src_url = f"{BASE_URL}/{src_filename}"
+                  try:
+                      resp = requests.get(src_url, headers=UA, timeout=15)
+                      resp.raise_for_status()
+                      content = resp.content
+                  except Exception as e:
+                      print(f"  ✗ {src_filename} — {e}")
+                      continue
+
+                  for s in stations:
+                      ps_norm   = s.get("ps","").strip().replace(" ","_").replace("/","-")
+                      dest_name = f"{pi}_{ps_norm}.{ext}"
+                      dest_path = LOGOS_DIR / dest_name
+                      gh_url    = f"{GH_RAW}/{dest_name}"
+
+                      if dest_path.exists():
+                          print(f"  · {dest_name} — déjà présent, skip")
+                          skipped += 1
+                          continue
+
+                      dest_path.write_bytes(content)
+                      print(f"  ✅ {dest_name}  ← {src_filename}")
+                      downloaded += 1
+
+                      if ext == "svg" or not s.get("logo_url"):
+                          s["logo_url"]    = gh_url
+                          s["logo_source"] = "tef.noobish.eu"
+                          modified = True
+
+          print(f"\nTéléchargés   : {downloaded}")
+          print(f"Déjà présents : {skipped}")
+          print(f"PI hors base  : {not_in_db}")
+
+          if modified:
+              data["updated"] = "2026-03-23"
+              with open(DATA_FILE, "w") as f:
+                  json.dump(data, f, indent=2, ensure_ascii=False)
+                  f.write("\n")
+              print("FR.json mis à jour")
+          PYEOF
+
+      - name: Validate
+        run: python3 scripts/validate.py
+
+      - name: Commit & push
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add logos/FR/ data/FR.json
+          git diff --staged --quiet && echo "Rien à commiter" && exit 0
+          git commit -m "feat: import logos from tef.noobish.eu (PNG + SVG)"
+          git push
