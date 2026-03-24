@@ -6,7 +6,7 @@
       "pi": "F201",
       "ps": "INTER",
       "name": "France Inter",
-      "logo_url": "https://raw.githubusercontent.com/LyonelB/rds-station-db/main/logos/FR/F201_INTER.png",
+      "logo_url": "https://cdn.jsdelivr.net/gh/LyonelB/rds-station-db@main/logos/FR/F201_INTER.png",
       "logo_source": "local",
       "contributor": "LyonelB",
       "updated": "2026-03-18"
@@ -15,7 +15,7 @@
       "pi": "F202",
       "ps": "_CULTURE",
       "name": "France Culture",
-      "logo_url": "https://raw.githubusercontent.com/LyonelB/rds-station-db/main/logos/FR/F202__CULTURE.png",
+      "logo_url": "https://cdn.jsdelivr.net/gh/LyonelB/rds-station-db@main/logos/FR/F202__CULTURE.png",
       "logo_source": "local",
       "contributor": "LyonelB",
       "updated": "2026-03-18"
@@ -690,7 +690,7 @@
       "pi": "F20C",
       "ps": "RCF85",
       "name": "RCF Vendée",
-      "logo_url": "https://raw.githubusercontent.com/LyonelB/rds-station-db/main/logos/FR/F20C_RCF85.png",
+      "logo_url": "https://cdn.jsdelivr.net/gh/LyonelB/rds-station-db@main/logos/FR/F20C_RCF85.png",
       "logo_source": "local",
       "contributor": "LyonelB",
       "updated": "2026-03-18"
@@ -699,7 +699,7 @@
       "pi": "F211",
       "ps": "RTL",
       "name": "RTL",
-      "logo_url": "https://raw.githubusercontent.com/LyonelB/rds-station-db/main/logos/FR/F211_RTL.png",
+      "logo_url": "https://cdn.jsdelivr.net/gh/LyonelB/rds-station-db@main/logos/FR/F211_RTL.png",
       "logo_source": "local",
       "contributor": "ARCOM",
       "updated": "2026-03-18"
@@ -1050,7 +1050,7 @@
       "pi": "F405",
       "ps": "ICIALSAC",
       "name": "ici Alsace",
-      "logo_url": "https://raw.githubusercontent.com/LyonelB/rds-station-db/main/logos/FR/F405_ICIALSAC.png",
+      "logo_url": "https://cdn.jsdelivr.net/gh/LyonelB/rds-station-db@main/logos/FR/F405_ICIALSAC.png",
       "logo_source": "local",
       "contributor": "ARCOM",
       "updated": "2026-03-18"
@@ -4983,7 +4983,7 @@
       "pi": "FA41",
       "ps": "GRAFFITI",
       "name": "Graffiti Radio",
-      "logo_url": "https://raw.githubusercontent.com/LyonelB/rds-station-db/main/logos/FR/FA41_GRAFFITI.png",
+      "logo_url": "https://cdn.jsdelivr.net/gh/LyonelB/rds-station-db@main/logos/FR/FA41_GRAFFITI.png",
       "logo_source": "local",
       "contributor": "LyonelB",
       "updated": "2026-03-17"
@@ -5136,7 +5136,7 @@
       "pi": "FA61",
       "ps": "ALOUETTE",
       "name": "Alouette",
-      "logo_url": "https://raw.githubusercontent.com/LyonelB/rds-station-db/main/logos/FR/FA61_ALOUETTE.png",
+      "logo_url": "https://cdn.jsdelivr.net/gh/LyonelB/rds-station-db@main/logos/FR/FA61_ALOUETTE.png",
       "logo_source": "local",
       "contributor": "ARCOM",
       "updated": "2026-03-18"
@@ -5145,7 +5145,7 @@
       "pi": "FA61",
       "ps": "ALOUETTE",
       "name": "Alouette Châteauroux",
-      "logo_url": "https://raw.githubusercontent.com/LyonelB/rds-station-db/main/logos/FR/FA61_ALOUETTE.png",
+      "logo_url": "https://cdn.jsdelivr.net/gh/LyonelB/rds-station-db@main/logos/FR/FA61_ALOUETTE.png",
       "logo_source": "local",
       "contributor": "ARCOM",
       "updated": "2026-03-18"
@@ -5154,7 +5154,7 @@
       "pi": "FA61",
       "ps": "ALOUETTE",
       "name": "Alouette Loches",
-      "logo_url": "https://raw.githubusercontent.com/LyonelB/rds-station-db/main/logos/FR/FA61_ALOUETTE.png",
+      "logo_url": "https://cdn.jsdelivr.net/gh/LyonelB/rds-station-db@main/logos/FR/FA61_ALOUETTE.png",
       "logo_source": "local",
       "contributor": "ARCOM",
       "updated": "2026-03-18"
